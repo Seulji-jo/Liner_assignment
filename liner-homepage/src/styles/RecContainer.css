@@ -1,0 +1,119 @@
+.rec-container {
+  margin-top: 16px;
+
+  background-color: #f6f8fa;
+  border-radius: var(--size-border-radius);
+}
+
+.rec-title-container {
+  padding: 16px 20px 0;
+}
+.rec-title {
+  padding-bottom: 8px;
+
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  color: var(--color-lGray);
+
+  border-bottom: 1px solid #ddd;
+}
+
+.rec-contents {
+  margin: 0 -8px;
+}
+
+.rec-tags-container {
+  padding: 0 20px 12px;
+}
+
+.rec-article-container {
+  margin-top: 8px;
+  padding: 0 20px;
+}
+
+.rec-tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 8px;
+
+  font-weight: var(--weight-medium);
+  color: var(--color-dGray);
+}
+
+.rec-tag:hover {
+  color: var(--color-liner);
+  background-color: #f6f8fa;
+  mix-blend-mode: multiply;
+  border-radius: var(--size-border-radius);
+}
+
+.rec-article {
+  width: 320px;
+  margin-left: -12px;
+  padding: 8px 20px;
+}
+.rec-article:hover {
+  background-color: #f6f8fa;
+  mix-blend-mode: multiply;
+}
+
+.rec-article-tag-list {
+  height: 15px;
+  margin-bottom: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.rec-article-tag {
+  margin-right: 6px;
+  font-size: var(--font-small);
+  font-weight: var(--weight-medium);
+}
+
+.rec-article-title {
+  font-family: var(--font-eng);
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+  line-height: 20px;
+}
+
+.rec-article-link {
+  font-family: var(--font-eng);
+  font-size: var(--font-xsmall);
+  font-weight: var(--weight-regular);
+  color: var(--color-lGray);
+  white-space: nowrap;
+}
+
+.show-more {
+  width: 320px;
+  margin-left: -12px;
+  padding: 12px 0;
+
+  font-size: var(--font-small);
+  font-weight: var(--weight-medium);
+  text-align: center;
+  color: var(--color-liner);
+
+  cursor: pointer;
+}
+
+.show-more:hover {
+  background-color: #f6f8fa;
+  mix-blend-mode: multiply;
+  border-radius: 0 0 8px 8px;
+}
+
+.rec-article-container.no-pages {
+  height: 173px;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-pages {
+  color: var(--color-lGray);
+}

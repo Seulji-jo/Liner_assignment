@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  /* Color */
+  --color-black: #222;
+  --color-white: #fff;
+  --color-gray: #777;
+  --color-lGray: #999;
+  --color-dGray: #555;
+  --color-liner: #33cac6;
+
+  /* Font family */
+  --font-liner: 'Montserrat', sans-serif;
+  --font-eng: 'Roboto', sans-serif;
+  --font-kor: 'Noto Sans KR', sans-serif;
+
+  /* Font size */
+  --font-title: 32px;
+  --font-subtitle: 20px;
+  --font-medium: 16px;
+  --font-regular: 14px;
+  --font-small: 12px;
+  --font-xsmall: 11px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-medium: 500;
+  --weight-regular: 400;
+  --weight-light: 300;
+
+  /* Size */
+  --size-border-radius: 8px;
+
+  --animation-duration: 300ms;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: var(--font-regular);
+  font-family: var(--font-eng), var(--font-kor);
+  letter-spacing: -0.2px;
+  color: var(--color-black);
+  cursor: default;
+  -ms-overflow-style: none;
+  scrollbar-width: none; /*firefox*/
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+table,
+tr,
+th,
+td {
+  font-size: var(--font-small);
+  font-family: var(--font-kor);
+  letter-spacing: -0.2px;
+  color: var(--color-black);
+  word-spacing: -1px;
+  border-collapse: collapse;
+  cursor: default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img,
+fieldset,
+frameset,
+iframe {
+  border: none;
+}
+input,
+select,
+option,
+textarea,
+button {
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  outline: none;
+}
+button {
+  font-size: var(--font-regular);
+  font-family: var(--font-eng), var(--font-kor);
+  letter-spacing: -0.5px;
+  cursor: pointer;
+}
+a,
+img,
+label {
+  display: block;
+}
+legend,
+hr,
+caption {
+  display: none;
+}
+em,
+i,
+address {
+  font-style: normal;
+}
+b,
+strong {
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+.skip,
+.blind {
+  display: block;
+  height: 0;
+  overflow: hidden;
+
+  position: absolute;
+  top: -600rem;
+}

@@ -1,0 +1,24 @@
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+.main-container {
+  margin-top: 64px;
+  display: flex;
+}
+
+main {
+  width: 100%;
+  margin-left: 224px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon:hover {
+  background-color: #f6f8fa;
+  border-radius: 50%;
+}
+
+/* .liner-font {
+  font-family: var(--font-liner);
+} */
