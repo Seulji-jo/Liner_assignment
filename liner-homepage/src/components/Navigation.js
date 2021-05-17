@@ -1,30 +1,25 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../styles/Navigation.css';
 
 function Navigation() {
-  let { pathname } = useLocation();
-  console.log(pathname);
   return (
     <nav className="nav">
       <ul className="nav-container">
         <li className="nav-item">
-          <Link to="/" className={pathname === '/' ? 'active' : null}>
+          <NavLink to="/home" activeClassName="active">
             For You
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link
-            to="/myhighlights"
-            className={pathname === '/myhighlights' ? 'active' : null}
-          >
+          <NavLink to="/myhighlights" activeClassName="active">
             My Highlights
-          </Link>
+          </NavLink>
         </li>
         <li className="nav-item">
-          <Link to="/more" className={pathname === '/more' ? 'active' : null}>
+          <NavLink to="/more" activeClassName="active">
             More
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>

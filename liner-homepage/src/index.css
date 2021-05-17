@@ -8,6 +8,8 @@
   --color-lGray: #999;
   --color-dGray: #555;
   --color-liner: #33cac6;
+  --color-dLiner: #00bdb8;
+  --color-bg: #eef1f4;
 
   /* Font family */
   --font-liner: 'Montserrat', sans-serif;
@@ -46,7 +48,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: var(--font-regular);
-  font-family: var(--font-eng), var(--font-kor);
+  font-family: 'Roboto', var(--font-kor);
   letter-spacing: -0.2px;
   color: var(--color-black);
   cursor: default;
@@ -58,12 +60,18 @@ body {
   display: none;
 }
 
+@font-face {
+  font-family: var(--font-kor);
+  src: local('Noto Sans KR');
+  unicode-range: U+AC00-D7AF;
+}
+
 table,
 tr,
 th,
 td {
-  font-size: var(--font-small);
-  font-family: var(--font-kor);
+  font-size: var(--font-regular);
+  font-family: var(--font-eng);
   letter-spacing: -0.2px;
   color: var(--color-black);
   word-spacing: -1px;
@@ -77,8 +85,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 1rem;
-  font-weight: normal;
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+}
+h3 {
+  font-family: var(--font-liner);
 }
 ul,
 ol,
@@ -103,7 +114,7 @@ button {
 }
 button {
   font-size: var(--font-regular);
-  font-family: var(--font-eng), var(--font-kor);
+  font-family: var(--font-liner);
   letter-spacing: -0.5px;
   cursor: pointer;
 }
