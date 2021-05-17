@@ -1,0 +1,142 @@
+.modal-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.dim {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 150;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dropdown {
+  width: 480px;
+  min-height: 179px;
+  padding: 20px 32px;
+  padding-right: 28px;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-family: var(--font-liner);
+
+  background-color: var(--color-white);
+  border-radius: 16px;
+}
+.modal-dropdown.more {
+  width: 400px;
+  height: 197px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-title {
+  margin-bottom: 24px;
+
+  font-size: 24px;
+  font-weight: var(--weight-bold);
+}
+.btn-close {
+  width: 32px;
+  height: 32px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  background: no-repeat center url(../img/close-x.svg);
+}
+
+.modal-description {
+  color: var(--color-gray);
+}
+
+.modal-btn-container {
+  align-self: flex-end;
+}
+.modal-btn {
+  padding: 8px 12px;
+
+  font-size: var(--font-medium);
+  color: var(--color-gray);
+}
+.modal-btn:hover {
+  background-color: var(--color-bg);
+  border-radius: var(--size-border-radius);
+}
+
+.modal-btn.confirm {
+  font-weight: var(--weight-bold);
+}
+.modal-btn.hide {
+  color: #f35750;
+}
+.modal-btn.hide:hover {
+  background-color: rgba(243, 87, 80, 0.3);
+  border-radius: var(--size-border-radius);
+}
+.modal-btn.ok {
+  color: var(--color-liner);
+}
+.modal-btn.ok:hover {
+  background-color: rgba(51, 202, 198, 0.3);
+  border-radius: var(--size-border-radius);
+}
+
+/* ShareModal */
+.share-sns-lists {
+  padding-bottom: 24px;
+  display: flex;
+
+  border-bottom: 1px solid var(--color-bg);
+}
+
+.share-sns {
+  width: 36px;
+  height: 36px;
+  margin-right: 16px;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  background-color: var(--color-bg);
+  border-radius: 50%;
+}
+
+.modal-bottom {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-input {
+  width: 335px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  font-size: var(--font-regular);
+}
+
+.link-copy {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  color: var(--color-liner);
+}
+
+.link-copy:hover {
+  background-color: rgba(51, 202, 198, 0.3);
+}

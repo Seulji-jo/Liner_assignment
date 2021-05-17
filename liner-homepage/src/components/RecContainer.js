@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/RecContainer.css';
 
 function RecommendationContainer({ title, tags, articles }) {
+  const [trendingPages, settrendingPages] = useState([]);
+
+  useEffect(() => {
+    if (articles) {
+      const newArticles = articles.reduce((result, article, i) => {
+        if (i < 5) result.push(article);
+        return result;
+      }, []);
+      settrendingPages(newArticles);
+    }
+  }, []);
+
   const renderContents = () => {
     if (tags) {
       return (
@@ -15,10 +27,10 @@ function RecommendationContainer({ title, tags, articles }) {
         </div>
       );
     }
-    if (articles) {
+    if (trendingPages) {
       return (
         <div className="rec-article-container">
-          {articles.map((article) => (
+          {trendingPages.map((article) => (
             <Link to="/" key={article.id} className="rec-article">
               {article.tags.length > 0 ? (
                 <div className="rec-article-tag-list">

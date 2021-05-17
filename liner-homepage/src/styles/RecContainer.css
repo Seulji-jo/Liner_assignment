@@ -23,7 +23,7 @@
 }
 
 .rec-tags-container {
-  padding: 0 20px 12px;
+  padding: 0 20px 20px;
 }
 
 .rec-article-container {
@@ -69,6 +69,7 @@
   margin-right: 6px;
   font-size: var(--font-small);
   font-weight: var(--weight-medium);
+  color: var(--color-gray);
 }
 
 .rec-article-title {

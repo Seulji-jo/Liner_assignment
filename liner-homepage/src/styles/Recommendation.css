@@ -3,7 +3,8 @@ aside {
 }
 
 .recommendation {
-  margin-top: 40px;
+  width: 320px;
+  position: fixed;
   font-family: var(--font-liner);
 }
 
@@ -42,9 +43,12 @@ aside {
   top: 16px;
   right: 20px;
 
-  /* text-indent: 100%;
-  white-space: nowrap; */
+  text-indent: 100%;
+  white-space: nowrap;
   overflow: hidden;
+
+  background-color: rgba(51, 202, 198, 0.2);
+  border-radius: 50%;
 }
 
 .welcome-pkg-btn {

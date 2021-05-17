@@ -12,13 +12,29 @@ export const tags = [
   'national library of medicine',
   'pubmed abstract',
 ];
+export const myTags = ['technology', 'programming', 'travel', 'study'];
 export const fakeDatas = [
   {
     id: '1',
-    tags: ['david foster wallace', 'education', 'learning'],
+    tags: [
+      'david foster wallace',
+      'education',
+      'learning',
+      'marcus aurelius',
+      'reading',
+    ],
     title: 'How to Remember What You Read',
     link: 'fs.blog',
     url: 'https://fs.blog/2017/10/how-to-remember-what-you-read/',
+    highlight:
+      'Why is it that some people seem to be able to read a book once and remember every detail of it for life, while others struggle to recall even the title a few days after putting down a book?',
+    description:
+      "The benefits of reading are negated if you don't remember what you read. This article discusses a tested system to increase retention.",
+    authors: 'https://www.facebook.com/FarnamStreet/',
+    imgSrc:
+      'https://149366099.v2.pressablecdn.com/wp-content/uploads/2016/12/books4.jpeg',
+    favicon:
+      'https://149366099.v2.pressablecdn.com/wp-content/uploads/2015/06/cropped-farnamstreet-192x192.png',
   },
   {
     id: '2',
@@ -26,13 +42,28 @@ export const fakeDatas = [
     title: 'Co-WIN Application',
     link: 'selfregistration.cowin.gov.in',
     url: 'https://www.lifehack.org/articles/technology/20-tips-use-google-search-efficiently.html',
+    highlight: 'Age 18+',
+    description: '',
+    authors: '',
+    imgSrc: '',
+    favicon: '',
   },
   {
     id: '3',
+
     tags: ['google', 'google search', 'tips', 'yahoo search'],
     title: '20 Google Search Tips to Use Google More Efficiently - Lifehack',
     link: 'www.lifehack.org',
     url: 'https://selfregistration.cowin.gov.in/appointment',
+    highlight:
+      'Millions of people use Google search every day for a variety of reasons. Students use it for school, business people use it for research, and millions more use it for entertainment',
+    description:
+      '18-Dec-2020 — 1. Use the tabs · 2. Use quotes · 3. Use a hyphen to exclude words · 4. Use a colon to search specific sites · 5. Find a page that links to another page.',
+    authors: '',
+    imgSrc:
+      'https://cdn.lifehack.org/wp-content/uploads/2013/09/google-search-tips.jpeg',
+    favicon:
+      'https://cdn.lifehack.org/wp-content/uploads/2018/05/31002541/lifehack-site-logo-170x170.png',
   },
   {
     id: '4',
@@ -40,6 +71,12 @@ export const fakeDatas = [
     title: 'Feed | LinkedIn',
     link: 'www.linkedin.com',
     url: 'https://www.linkedin.com/feed/',
+    highlight:
+      'MBA (Finance) at Symbiosis School of Banking & Finance I PGP Data Science & Engineering at Great Lakes I Member of Public Relations Team',
+    description: '',
+    authors: '',
+    imgSrc: '',
+    favicon: 'https://static-exp1.licdn.com/sc/h/2if24wp7oqlodqdlgei1n1520',
   },
   {
     id: '5',
@@ -47,6 +84,11 @@ export const fakeDatas = [
     title: 'Times Tables Rock Stars: Play',
     link: 'play.ttrockstars.com',
     url: 'https://play.ttrockstars.com/play',
+    highlight: 'er c',
+    description: '',
+    authors: '',
+    imgSrc: '',
+    favicon: 'https://play.ttrockstars.com/favicon.ico',
   },
   {
     id: '6',
@@ -55,5 +97,27 @@ export const fakeDatas = [
       'The PARA Method: A Universal System for Organizing Digital Information - Forte Labs',
     link: 'fortelabs.co',
     url: 'https://fortelabs.co/blog/para',
+    highlight:
+      'Imagine for a moment the perfect organizational system. One that supported and enhanced the work you do, telling you exactly where to put a piece of information, and exactly where to find it when you needed it',
+    description:
+      'Remember that there is no inherent structure or unit of work. ... is advancing too quickly on too many fronts for any one company to do every single function best.',
+    authors: '',
+    imgSrc:
+      'https://i1.wp.com/fortelabs.co/wp-content/uploads/2017/02/1rWFucoHrba0AYaOql1dGAg.jpeg?fit=800%2C450&ssl=1',
+    favicon:
+      'https://i1.wp.com/fortelabs.co/wp-content/uploads/2020/02/cropped-cropped-Icon_Red-1.png?fit=192%2C192&ssl=1',
+  },
+  {
+    id: '7',
+    tags: [],
+    title: '여행계획, 혼자 세울 필요 없다 - Korea Real Time Korean - WSJ',
+    link: 'realtime.wsj.com',
+    url: 'https://realtime.wsj.com/korea/2011/11/22/%EC%97%AC%ED%96%89%EA%B3%84%ED%9A%8D-%ED%98%BC%EC%9E%90-%EC%84%B8%EC%9A%B8-%ED%95%84%EC%9A%94-%EC%97%86%EB%8B%A4',
+    highlight: '',
+    description:
+      '비록 혼자 여행을 떠나더라도, 여행 계획을 온전히 혼자 만들 필요는 없다. 그리고 온전히 혼자 경험할 필요도 없다. 새로 나오는 많은 웹, 모바일 앱들이 페이스북, 포스퀘어, GPS기능 및 다른 도구들과 연결해서 여행 영감은 물론이고, 실시간으로 정보를 주며, 또 어디에 가서 무엇을 보고 심지어 여행 중 누구를 만나 어울릴 수 있는 지 추천해주고 있다. 현재 사용 가능한 앱들 중 최고 제품 넷과 곧 출시 될 앱 세 가지를 소개한다.',
+    authors: 'WSJ Staff',
+    imgSrc: '',
+    favicon: '',
   },
 ];
