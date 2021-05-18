@@ -1,9 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import '../styles/Recommendation.css';
 
 import RecommendationContainter from './RecContainer';
-import { tags, fakeDatas } from '../fakeData';
+import { tags, fakeDatas, relevants, newRelevants } from '../fakeData';
 
 function Recommendation({ page }) {
   const renderContents = () => {
@@ -13,7 +12,7 @@ function Recommendation({ page }) {
           <RecommendationContainter title="Trending Keywords" tags={tags} />
           <RecommendationContainter
             title="Trending Pages"
-            articles={fakeDatas}
+            articles={relevants}
           />
         </>
       );
@@ -23,11 +22,20 @@ function Recommendation({ page }) {
         <>
           <RecommendationContainter
             title="People Also Read"
-            // articles={fakeDatas}
+            articles={fakeDatas}
           />
         </>
       );
-    } else return null;
+    }
+    if (page === 'Hldetail') {
+      return (
+        <RecommendationContainter
+          title="People Also Read"
+          articles={newRelevants}
+        />
+      );
+    }
+    return null;
   };
   return (
     <aside>
@@ -39,7 +47,7 @@ function Recommendation({ page }) {
           </div>
           <div className="welcome-pkg-icon">Welcome Package icon</div>
           <div className="welcome-pkg-btn">
-            <Link to="/">Redeem Offer</Link>
+            <button>Redeem Offer</button>
           </div>
         </div>
         {renderContents()}

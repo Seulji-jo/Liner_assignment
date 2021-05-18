@@ -8,9 +8,9 @@ function SearchDropdown() {
   const options = ['Ttile', 'URL', 'Highlight', 'Description', 'Comment'];
 
   const renderOption = () => {
-    return options.map((option) => {
+    return options.map((option, i) => {
       return (
-        <li className={'dd-item active'}>
+        <li key={i} className={'dd-item active'}>
           <span className="lang">{option}</span>
           <div className="check-mark"></div>
         </li>

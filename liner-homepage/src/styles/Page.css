@@ -38,7 +38,7 @@
   display: inline-block;
 }
 .page-highlight {
-  max-height: 60px;
+  /* max-height: 60px; */
 
   line-height: 20px;
 

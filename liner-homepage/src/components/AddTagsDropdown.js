@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../styles/Dropdown.css';
 import { myTags } from '../fakeData';
 
-function AddTagsDropdown({}) {
+function AddTagsDropdown() {
   const node = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,9 +12,9 @@ function AddTagsDropdown({}) {
   };
 
   const renderTags = () => {
-    return myTags.map((tag) => {
+    return myTags.map((tag, i) => {
       return (
-        <li className="dd-item add-mytag">
+        <li className="dd-item add-mytag" key={i}>
           <span className="lang">{tag}</span>
           <div className="edit icon"></div>
         </li>

@@ -1,11 +1,9 @@
 import React from 'react';
 
-import Recommendation from './Recommendation';
-
 function More() {
   return (
     <main>
-      <section>More</section>
+      <section></section>
     </main>
   );
 }

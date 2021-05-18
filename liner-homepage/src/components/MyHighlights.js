@@ -3,39 +3,41 @@ import { NavLink, Switch, Route } from 'react-router-dom';
 import '../styles/MyHighlights.css';
 
 import Recommendation from './Recommendation';
-import LangDropdown from './LangDropdown';
 import Highlights from './Highlights';
 import Tags from './Tags';
 import FilterModal from './FilterModal';
-import { fakeDatas } from '../fakeData';
+import { myhighlights } from '../fakeData';
 import InfoModal from './InfoModal';
 import SearchDropdown from './SearchDropdown';
 
 function MyHighlights() {
   const node = useRef(null);
-  const [isSticky, setIsSticky] = useState(false);
+  // const [isSticky, setIsSticky] = useState(false);
   const [focus, setFocus] = useState(false);
+
+  let hlData = myhighlights.filter((hl) => hl.highlight);
 
   const handleClick = (e) => {
     if (!focus && (!node.current || !node.current.contains(e.target)))
       setFocus(false);
   };
 
-  const handleScroll = () => {
-    if (window.pageYOffset > 39) {
-      setIsSticky(true);
-    } else if (window.pageYOffset <= 39 && window.pageYOffset >= 0) {
-      setIsSticky(false);
-    }
-  };
+  // const handleScroll = () => {
+  //   if (window.pageYOffset > 39) {
+  //     setIsSticky(true);
+  //   } else if (window.pageYOffset <= 39 && window.pageYOffset >= 0) {
+  //     setIsSticky(false);
+  //   }
+  // };
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      // 리스너를 해재해 주었다
-      window.addEventListener('scroll', handleScroll);
-    };
-  });
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     // 리스너를 해재해 주었다
+  //     window.addEventListener('scroll', handleScroll);
+  //   };
+  // });
+
   useEffect(() => {
     document.addEventListener('click', handleClick);
 
@@ -57,9 +59,9 @@ function MyHighlights() {
           </div>
         </div>
         <div className="subtitle-container">
-          <h3 className="sub-title highlights">3 Pages</h3>
+          <h3 className="sub-title highlights">{myhighlights.length} Pages</h3>
           <h3 className="sub-title highlights">•</h3>
-          <h3 className="sub-title highlights">2 Highlights</h3>
+          <h3 className="sub-title highlights">{hlData.length} Highlights</h3>
         </div>
 
         <section className="highlights-section">

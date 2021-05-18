@@ -1,14 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
-
-import Page from './Page';
-import { fakeDatas } from '../fakeData';
+import React from 'react';
 
 function Tags() {
-  const renderPageLists = () => {
-    return fakeDatas.map((data) => <Page key={data.id} data={data} />);
-  };
-
-  return <div className="page-lists">tags</div>;
+  return <div className="page-lists"></div>;
 }
 
 export default Tags;
