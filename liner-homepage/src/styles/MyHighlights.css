@@ -49,6 +49,9 @@
   color: var(--color-black);
   background-color: var(--color-bg);
 }
+.tab-container > a:hover {
+  background-color: var(--color-bg);
+}
 
 .finders-container {
   width: 100%;

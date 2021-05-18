@@ -1,33 +1,17 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Page.css';
 import '../styles/HlPage.css';
 import noFavicon from '../img/favicon.svg';
 
 import ExportModal from './ExportModal';
-import ShareModal from './ShareModal';
+
 import MoreDropdown from './MoreDropdown';
 import ShareDropdown from './ShareDropdown';
 
 function Page({ data }) {
-  const {
-    tags,
-    title,
-    link,
-    url,
-    highlight,
-    description,
-    imgSrc,
-    favicon,
-    createdAt,
-  } = data;
-
-  const [onSaved, setOnSaved] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleOnSaved = () => {
-    setOnSaved(!onSaved);
-  };
+  const { id, tags, title, link, url, highlight, imgSrc, favicon, createdAt } =
+    data;
 
   return (
     <article className="page-container">
@@ -38,7 +22,7 @@ function Page({ data }) {
       >
         <div className="page-content">
           <h2 className="page-title">
-            <Link to="/">{title}</Link>
+            <Link to={`/myhighlights/pages/${id}`}>{title}</Link>
           </h2>
           <div className="highlight-container">
             {highlight && (
@@ -51,13 +35,18 @@ function Page({ data }) {
         </div>
         {imgSrc ? (
           <Link to="/" className="page-img-container">
-            <img src={imgSrc} alt={`${title} image`} className="page-img" />
+            <img src={imgSrc} alt={title} className="page-img" />
           </Link>
         ) : null}
       </div>
       <div className="page-tags">
         <span className="tag-img">tag</span>
-        {tags && tags.map((tag) => <span className="tag">{tag}</span>)}
+        {tags &&
+          tags.map((tag, i) => (
+            <span key={i} className="tag">
+              {tag}
+            </span>
+          ))}
         <button className="edit-tag">Edit Tag</button>
       </div>
       <div className="page-details">
@@ -67,7 +56,7 @@ function Page({ data }) {
             alt="favicon"
             className="page-favicon"
           />
-          <a href={url} target="_blank">
+          <a href={url} target="_blank" rel="noreferrer">
             {link}
           </a>
           <span className="slice">|</span>
