@@ -8,13 +8,11 @@ import ShareModal from './ShareModal';
 import MoreDropdown from './MoreDropdown';
 
 function Page({ data }) {
-  const { title, link, url, highlight, description, imgSrc, favicon } = data;
+  const { id, title, link, url, highlight, description, imgSrc, favicon } =
+    data;
 
   const [onSaved, setOnSaved] = useState(false);
-
-  const handleOnSaved = () => {
-    setOnSaved(!onSaved);
-  };
+  const [isOpen, setIsOpen] = useState(false);
 
   const renderHighlight = () => {
     if (highlight) {
@@ -33,12 +31,12 @@ function Page({ data }) {
       >
         <div className="page-content">
           <h2 className="page-title">
-            <Link to="/home">{title}</Link>
+            <Link to={`/pages/${id}`}>{title}</Link>
           </h2>
           {renderHighlight()}
         </div>
         {imgSrc ? (
-          <Link to="/home" className="page-img-container">
+          <Link to="/" className="page-img-container">
             <img src={imgSrc} alt={`${title} image`} className="page-img" />
           </Link>
         ) : null}
@@ -63,15 +61,25 @@ function Page({ data }) {
                   ? 'btn-save page-btn icon active'
                   : 'btn-save page-btn icon'
               }
-              onClick={handleOnSaved}
+              onClick={() => setOnSaved(!onSaved)}
             >
               saved
             </button>
           </div>
-          {/* <div className="share-container">
-            <button className="btn-share page-btn icon">share</button>
-          </div> */}
-          <ShareModal link={url} />
+          <div className="share-container">
+            <button
+              className="btn-share page-btn icon"
+              onClick={(e) => setIsOpen(!isOpen)}
+            >
+              share
+            </button>
+            <ShareModal
+              link={url}
+              isOpen={isOpen}
+              setIsOpen={setIsOpen}
+              title="Share Original Page"
+            />
+          </div>
           <MoreDropdown />
         </div>
       </div>
