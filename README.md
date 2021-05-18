@@ -1,5 +1,4 @@
 # Liner_assignment
----
 React로 라이너 홈페이지 UI를 개발(반응형 X)하는 과제입니다.
 라이너 홈페이지에 로그인한 뒤 나오는 페이지들을 간소화해 구현했습니다.
 CRA로 리액트를 생성하였으며, 라이브러리는 설정하라고 알려준 React Router만 설치하여 사용하였습니다.
@@ -10,18 +9,15 @@ App.js에 각각 필요한 컴포넌트를 리액트라우터를 사용하여 �
 
 
 ## 1. 공통 - Header
----
 헤더는 따로 특별한 기능은 넣지 않고 진행했습니다.
 로고, 서치바, 그리고 업그레이드 버튼과 알림버튼을 배치했고, hover까지 구현하였습니다.
 
 ## 2. 공통 - 좌측의 For You, My Highlights, More
----
 좌측에 있는 네비게이션은 fixed로 페이지를 스크롤 하여도 움직이지않게 설정해주었고,
 Link를 사용하면 클래스를 지정할때 삼항연산자를 쓸 수 밖에 없는 상황이 되어
 NavLink를 사용하여 설정한 URL이 활성화 되면 클래스를 지정해 주어 특정 스타일을 갖게 해주었습니다.
 
 ### For You 탭
----
 메인페이지로 하이라이트에 기반한 추천페이지 목록이 리스트 형태로 뜨는 탭과
 우측에 Trending Keywords, Trending Pages를 배치하였습니다.
 메인페이지는 Page컴포넌트로 리스트를 따로 만들고,
@@ -35,7 +31,6 @@ Recommendation와 RecContainer로 우측에 있는 목록을 만들어서 Home�
 스크롤링을 하면 폰트사이즈를 줄여 컨텐츠를 보기에 불편함이 없게끔 구현했습니다.
 
 ### My Highlights 탭
----
 유저(내)가 하이라이팅 한 페이지의 목록이 뜨는 탭으로 For you탭과 비슷하나
 하단의 버튼, 내가 설정한 태그, 하이라이트 부분 등이 달랐습니다.
 My Highlights, Highlights, Tags, HlPage 등의 컴포넌트를 사용하였고,
@@ -46,7 +41,6 @@ My Highlights, Highlights, Tags, HlPage 등의 컴포넌트를 사용하였고,
 우측의 Trending Keywords, Trending Pages은 People Also Read로 바꾸어 구현했습니다.
 
 ### 공통 - Detail Page
----
 상세페이지는 추천페이지 / 내가 하이라이팅한 페이지를 클릭했을 때 나오는 화면으로,
 두개의 상세페이지가 조금씩 다릅니다.
 Detail, HlDatail로 컴포넌트를 따로 만들어 차이를 표현했습니다. 
