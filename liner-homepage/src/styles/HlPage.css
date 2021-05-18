@@ -1,0 +1,52 @@
+.highlight-container {
+  display: flex;
+}
+.highlight {
+  width: 4px;
+  height: auto;
+  margin-right: 16px;
+
+  background-color: rgb(255, 255, 131);
+}
+.page-tags {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-small);
+}
+.tag-img {
+  width: 20px;
+  height: 20px;
+  display: block;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  background: no-repeat center url(../img/tag.svg);
+}
+
+.tag,
+.edit-tag {
+  padding: 3px 6px;
+  margin-right: 8px;
+}
+.tag,
+.edit-tag:hover {
+  background-color: var(--color-bg);
+  border-radius: 4px;
+}
+
+.edit-tag {
+  font-size: var(--font-small);
+}
+
+.page-link > span {
+  margin-left: 14px;
+
+  font-size: var(--font-small);
+  color: var(--color-gray);
+}
+.btn-export {
+  background: no-repeat center url(../img/export.svg);
+}

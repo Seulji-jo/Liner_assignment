@@ -48,6 +48,7 @@
   font-size: 24px;
   font-weight: var(--weight-bold);
 }
+
 .btn-close {
   width: 32px;
   height: 32px;
@@ -95,14 +96,17 @@
 }
 
 /* ShareModal */
-.share-sns-lists {
+.modal-description {
+  margin-bottom: 24px;
+}
+.modal-list-container {
   padding-bottom: 24px;
   display: flex;
 
   border-bottom: 1px solid var(--color-bg);
 }
 
-.share-sns {
+.modal-list {
   width: 36px;
   height: 36px;
   margin-right: 16px;
@@ -139,4 +143,65 @@
 
 .link-copy:hover {
   background-color: rgba(51, 202, 198, 0.3);
+}
+
+/* Export Modal */
+.modal-list-container.export {
+  border-bottom: none;
+}
+.export-file-container {
+  width: 53px;
+  margin-right: 16px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-list.export-file {
+  margin: 0;
+}
+.file {
+  margin-top: 6px;
+  font-size: var(--font-small);
+}
+
+/* FilterModal */
+.modal-dropdown.filter {
+  width: 400px;
+}
+
+.modal-subtitle {
+  margin: 24px 16px 16px 0;
+  font-weight: var(--weight-bold);
+  color: var(--color-lGray);
+}
+.modal-search {
+  width: 336px;
+  height: 40px;
+  padding: 8px 12px;
+
+  background-color: rgb(246, 248, 250);
+  border-radius: 8px;
+}
+
+.filter-modal-list {
+  height: 32px;
+  display: flex;
+}
+
+.list-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+  display: block;
+  background-color: var(--color-bg);
+  border-radius: 50%;
+}
+
+.modal-bottom {
+  margin-top: 16px;
+  padding-top: 8px;
+  border-top: 1px solid var(--color-bg);
 }
