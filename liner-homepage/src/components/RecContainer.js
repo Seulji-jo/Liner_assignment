@@ -27,7 +27,7 @@ function RecommendationContainer({ title, tags, articles }) {
         </div>
       );
     }
-    if (trendingPages) {
+    if (trendingPages.length > 0) {
       return (
         <div className="rec-article-container">
           {trendingPages.map((article) => (

@@ -121,3 +121,49 @@ export const fakeDatas = [
     favicon: '',
   },
 ];
+export const myhighlights = [
+  {
+    id: '1',
+    tags: ['여행'],
+    title:
+      'LUXURY 아프리카 나미비아 사막으로 떠나는 사진 여행 세상에서 가장 아름다운 사막',
+    link: 'luxury.designhouse.co.kr',
+    url: 'http://luxury.designhouse.co.kr/in_magazine/sub.html?at=view&info_id=47715',
+    highlight: '데드 플라이의 풍경.',
+    description: '',
+    authors: '',
+    createdAt: 'May 14, 2021',
+    imgSrc: '',
+    favicon: '',
+  },
+  {
+    id: '2',
+    tags: ['react', 'programming'],
+    title:
+      'LUXURY 아프리카 나미비아 사막으로 떠나는 사진 여행 세상에서 가장 아름다운 사막',
+    link: 'velopert.com',
+    url: 'https://velopert.com/3417',
+    highlight:
+      'URL 쿼리의 경우엔 컴포넌트 내에서 동적으로 사용 할 수 있고, params 의 경우엔 사용하기 전에 꼭 라우트에서 지정을 해주어야합니다',
+    description:
+      '이 튜토리얼은 3개의 포스트로 나뉘어진 이어지는 강좌입니다. 목차를 확인하시려면 여기를 참고하세요. SPA 란? Single Page Application (싱글 페이지 어플리케이션) 의 약자입니다. 말 그대로, 페이지가 1개인 어플리케이션이란 뜻입니다. 전통적인 웹어플리케이션의',
+    authors: '',
+    createdAt: 'May 16, 2021',
+    imgSrc: 'https://velopert.com/wp-content/uploads/2017/06/Untitled-1.png',
+    favicon: '',
+  },
+  {
+    id: '3',
+    tags: [],
+    title: '20 Google Search Tips to Use Google More Efficiently - Lifehack',
+    link: 'www.lifehack.org',
+    url: 'https://selfregistration.cowin.gov.in/appointment',
+    highlight: '',
+    description: '',
+    authors: '',
+    createdAt: 'May 18, 2021',
+    imgSrc: '',
+    favicon:
+      'https://cdn.lifehack.org/wp-content/uploads/2018/05/31002541/lifehack-site-logo-170x170.png',
+  },
+];

@@ -7,12 +7,12 @@ function Navigation() {
     <nav className="nav">
       <ul className="nav-container">
         <li className="nav-item">
-          <NavLink to="/home" activeClassName="active">
+          <NavLink exact to="/" activeClassName="active">
             For You
           </NavLink>
         </li>
         <li className="nav-item">
-          <NavLink to="/myhighlights" activeClassName="active">
+          <NavLink to="/myhighlights/highlights" activeClassName="active">
             My Highlights
           </NavLink>
         </li>

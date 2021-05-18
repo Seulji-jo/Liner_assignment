@@ -7,6 +7,7 @@ import Navigation from './components/Navigation';
 import Home from './components/Home';
 import MyHighlights from './components/MyHighlights';
 import More from './components/MorePage';
+import Detail from './components/Detail';
 
 function App() {
   return (
@@ -16,10 +17,18 @@ function App() {
         <div className="main-container">
           <Navigation />
           <Switch>
-            <Route path="/home" exact component={Home} />
-            <Route path="/pages/:dataId" component={Home} />
-            <Route exact path="/myhighlights" component={MyHighlights} />
-            <Route path="/myhighlights/pages/:dataId" component={Home} />
+            <Route path="/" exact component={Home} />
+            <Route path="/pages/:dataId" component={Detail} />
+            <Route path="/myhighlights" component={MyHighlights} />
+            {/* <Switch>
+              <Route
+                exact
+                path="/myhighlights/highlights"
+                component={MyHighlights}
+              />
+              <Route path="/myhighlights/pages/:dataId" component={Home} />
+            </Switch> */}
+
             <Route path="/more" component={More} />
           </Switch>
         </div>

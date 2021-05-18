@@ -18,6 +18,7 @@
   left: auto;
   right: 0;
 }
+
 .dd-dropdown.more {
   min-width: 224px;
 }
@@ -109,4 +110,11 @@
   width: 14px;
   height: 10px;
   background: no-repeat center url(../img/check.svg);
+}
+
+/* SearchDropdown */
+.search-option {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
 }
