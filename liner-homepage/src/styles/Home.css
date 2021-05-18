@@ -1,8 +1,9 @@
 main {
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 .main {
   width: 712px;
+  margin-top: 40px;
   padding: 0 16px;
 }
 

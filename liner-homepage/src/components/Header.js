@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
 function Header() {
   return (
     <header>
       <div className="header-container">
-        <Link to="/" className="liner-logo">
+        <Link to="/home" className="liner-logo">
           liner-logo
         </Link>
         <form className="search">

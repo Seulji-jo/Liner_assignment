@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/RecContainer.css';
 
@@ -13,7 +13,7 @@ function RecommendationContainer({ title, tags, articles }) {
       }, []);
       settrendingPages(newArticles);
     }
-  }, []);
+  }, [articles]);
 
   const renderContents = () => {
     if (tags) {
@@ -58,9 +58,11 @@ function RecommendationContainer({ title, tags, articles }) {
   };
   return (
     <div className="rec-container">
-      <div className="rec-title-container">
-        <h3 className="rec-title">{title}</h3>
-      </div>
+      {title && (
+        <div className="rec-title-container">
+          <h3 className="rec-title">{title}</h3>
+        </div>
+      )}
       <div className="rec-contents">{renderContents()}</div>
     </div>
   );

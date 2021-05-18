@@ -7,8 +7,8 @@ function FilterModal() {
   const type = ['Web', 'PDF'];
 
   const renderList = (listTopic) => {
-    return listTopic.map((list) => (
-      <li className="filter-modal-list">
+    return listTopic.map((list, i) => (
+      <li className="filter-modal-list" key={i}>
         <div className={`list-color ${list}`}></div>
         <span>{list}</span>
         <div className="check-mark"></div>

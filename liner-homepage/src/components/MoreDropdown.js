@@ -49,7 +49,7 @@ function MoreDropdown({ title, link }) {
                       <span className="lang">Edit a title</span>
                     </li>
                     <li className={'dd-item more'}>
-                      <a href={link} target="_blank">
+                      <a href={link} target="_blank" rel="noreferrer">
                         <div className="check-mark"></div>
                         <span className="lang">View Original</span>
                       </a>

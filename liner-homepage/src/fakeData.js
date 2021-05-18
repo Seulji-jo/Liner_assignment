@@ -139,8 +139,7 @@ export const myhighlights = [
   {
     id: '2',
     tags: ['react', 'programming'],
-    title:
-      'LUXURY 아프리카 나미비아 사막으로 떠나는 사진 여행 세상에서 가장 아름다운 사막',
+    title: 'react-router :: 1장. 리액트 라우터 사용해보기 | VELOPERT.LOG',
     link: 'velopert.com',
     url: 'https://velopert.com/3417',
     highlight:
@@ -154,6 +153,101 @@ export const myhighlights = [
   },
   {
     id: '3',
+    tags: [],
+    title: '20 Google Search Tips to Use Google More Efficiently - Lifehack',
+    link: 'www.lifehack.org',
+    url: 'https://selfregistration.cowin.gov.in/appointment',
+    highlight: '',
+    description: '',
+    authors: '',
+    createdAt: 'May 18, 2021',
+    imgSrc: '',
+    favicon:
+      'https://cdn.lifehack.org/wp-content/uploads/2018/05/31002541/lifehack-site-logo-170x170.png',
+  },
+];
+
+export const relevants = [
+  {
+    id: '1',
+    tags: ['brain', 'confidence', 'fascinating', 'psychology', 'tricks'],
+    title: '16 Psychological Tricks You Can Use To Get What You Want',
+    link: 'www.storypick.com',
+    url: 'https://www.storypick.com/what-i-want/',
+    highlight: '',
+    description: 'Mind games baby!',
+    authors: '',
+    createdAt: 'May 14, 2021',
+    imgSrc: 'https://www.storypick.com/wp-content/uploads/2016/02/pwcover.jpg',
+    favicon:
+      'https://www.storypick.com/wp-content/uploads/2016/01/cropped-storypick-favicon-300x300.png',
+  },
+  {
+    id: '2',
+    tags: ['los angeles'],
+    title: 'LA 인사이더들이 알려주는 멋진 LA 여행 팁! | 로스앤젤레스관광청',
+    link: 'www.discoverlosangeles.com',
+    url: 'https://www.discoverlosangeles.com/kr/la-%EC%9D%B8%EC%82%AC%EC%9D%B4%EB%8D%94%EB%93%A4%EC%9D%B4-%EC%95%8C%EB%A0%A4%EC%A3%BC%EB%8A%94-%EB%A9%8B%EC%A7%84-la-%EC%97%AC%ED%96%89-%ED%8C%81',
+    highlight: '',
+    description:
+      'LA에서 할 수 있는 것들은 무궁무진합니다! 500제곱 마일에 달하는 이 광대한 도시에서 일어나고 있는 모든 일들을 알게 되는 건 매우 어려운 일이죠. 로스앤젤레스를 즐기기 위해 정해진 방법은 없습니다. 하지만 로스앤젤레스를 최대한 만끽 할 수 있는 팁들은 많이 있죠. LA 전문가들이 전하는 멋진 팁들을 공개합니다.',
+    authors: '',
+    createdAt: 'May 17, 2021',
+    imgSrc:
+      'https://www.discoverlosangeles.com/sites/default/files/images/2019-01/Jimmy-Kimmel-Live.jpg',
+    favicon: 'https://www.discoverlosangeles.com/themes/custom/dla/favicon.ico',
+  },
+];
+
+export const newRelevants = [
+  {
+    id: '1',
+    tags: ['여행'],
+    title:
+      'LUXURY 아프리카 나미비아 사막으로 떠나는 사진 여행 세상에서 가장 아름다운 사막',
+    link: 'luxury.designhouse.co.kr',
+    url: 'http://luxury.designhouse.co.kr/in_magazine/sub.html?at=view&info_id=47715',
+    highlight: '데드 플라이의 풍경.',
+    description: '',
+    authors: '',
+    createdAt: 'May 14, 2021',
+    imgSrc: '',
+    favicon: '',
+  },
+  {
+    id: '2',
+    tags: ['los angeles'],
+    title: 'LA 인사이더들이 알려주는 멋진 LA 여행 팁! | 로스앤젤레스관광청',
+    link: 'www.discoverlosangeles.com',
+    url: 'https://www.discoverlosangeles.com/kr/la-%EC%9D%B8%EC%82%AC%EC%9D%B4%EB%8D%94%EB%93%A4%EC%9D%B4-%EC%95%8C%EB%A0%A4%EC%A3%BC%EB%8A%94-%EB%A9%8B%EC%A7%84-la-%EC%97%AC%ED%96%89-%ED%8C%81',
+    highlight: '',
+    description:
+      'LA에서 할 수 있는 것들은 무궁무진합니다! 500제곱 마일에 달하는 이 광대한 도시에서 일어나고 있는 모든 일들을 알게 되는 건 매우 어려운 일이죠. 로스앤젤레스를 즐기기 위해 정해진 방법은 없습니다. 하지만 로스앤젤레스를 최대한 만끽 할 수 있는 팁들은 많이 있죠. LA 전문가들이 전하는 멋진 팁들을 공개합니다.',
+    authors: '',
+    createdAt: 'May 17, 2021',
+    imgSrc:
+      'https://www.discoverlosangeles.com/sites/default/files/images/2019-01/Jimmy-Kimmel-Live.jpg',
+    favicon: 'https://www.discoverlosangeles.com/themes/custom/dla/favicon.ico',
+  },
+  {
+    id: '3',
+
+    tags: ['google', 'google search', 'tips', 'yahoo search'],
+    title: '20 Google Search Tips to Use Google More Efficiently - Lifehack',
+    link: 'www.lifehack.org',
+    url: 'https://selfregistration.cowin.gov.in/appointment',
+    highlight:
+      'Millions of people use Google search every day for a variety of reasons. Students use it for school, business people use it for research, and millions more use it for entertainment',
+    description:
+      '18-Dec-2020 — 1. Use the tabs · 2. Use quotes · 3. Use a hyphen to exclude words · 4. Use a colon to search specific sites · 5. Find a page that links to another page.',
+    authors: '',
+    imgSrc:
+      'https://cdn.lifehack.org/wp-content/uploads/2013/09/google-search-tips.jpeg',
+    favicon:
+      'https://cdn.lifehack.org/wp-content/uploads/2018/05/31002541/lifehack-site-logo-170x170.png',
+  },
+  {
+    id: '4',
     tags: [],
     title: '20 Google Search Tips to Use Google More Efficiently - Lifehack',
     link: 'www.lifehack.org',

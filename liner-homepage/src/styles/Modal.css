@@ -59,8 +59,15 @@
   background: no-repeat center url(../img/close-x.svg);
 }
 
-.modal-description {
+.modal-description.edit-title {
+  width: 336px;
+  height: 40px;
+  padding: 12px 16px;
+
   color: var(--color-gray);
+
+  background-color: var(--color-bg);
+  border-radius: var(--size-border-radius);
 }
 
 .modal-btn-container {

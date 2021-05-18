@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Page.css';
 import noFavicon from '../img/favicon.svg';
@@ -8,8 +8,17 @@ import ShareModal from './ShareModal';
 import MoreDropdown from './MoreDropdown';
 
 function Page({ data }) {
-  const { id, title, link, url, highlight, description, imgSrc, favicon } =
-    data;
+  const {
+    id,
+    tags,
+    title,
+    link,
+    url,
+    highlight,
+    description,
+    imgSrc,
+    favicon,
+  } = data;
 
   const [onSaved, setOnSaved] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +33,15 @@ function Page({ data }) {
 
   return (
     <article className="page-container">
+      {tags && (
+        <div className="detail-tag-container">
+          {tags.map((tag, i) => (
+            <span key={i} className="detail-tag">
+              #{tag}
+            </span>
+          ))}
+        </div>
+      )}
       <div
         className={
           imgSrc ? 'page-content-container' : 'page-content-container no-img'
@@ -31,13 +49,13 @@ function Page({ data }) {
       >
         <div className="page-content">
           <h2 className="page-title">
-            <Link to={`/pages/${id}`}>{title}</Link>
+            <Link to={`/home/pages/${id}`}>{title}</Link>
           </h2>
           {renderHighlight()}
         </div>
         {imgSrc ? (
           <Link to="/" className="page-img-container">
-            <img src={imgSrc} alt={`${title} image`} className="page-img" />
+            <img src={imgSrc} alt={title} className="page-img" />
           </Link>
         ) : null}
       </div>
@@ -48,7 +66,7 @@ function Page({ data }) {
             alt="favicon"
             className="page-favicon"
           />
-          <a href={url} target="_blank">
+          <a href={url} target="_blank" rel="noreferrer">
             {link}
           </a>
         </div>

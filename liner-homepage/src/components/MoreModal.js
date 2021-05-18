@@ -1,14 +1,22 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/Modal.css';
 
 function MoreModal({ isOpen, close, txt, title }) {
+  let [value, setValue] = useState(title);
   const renderTitle = () => {
     if (title) return txt;
     return 'Are You Sure?';
   };
   const renderBody = () => {
     if (txt === 'Edit a title') {
-      return <input type="text" className="modal-description" value={title} />;
+      return (
+        <input
+          type="text"
+          className="modal-description edit-title"
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+        />
+      );
     } else if (txt === 'Move 1 page to trash') {
       return (
         <p className="modal-description">You can restore it in the trash.</p>
@@ -17,7 +25,7 @@ function MoreModal({ isOpen, close, txt, title }) {
     return (
       <p className="modal-description">
         Do you
-        {txt[0] == 'h' ? ` really want to ${txt}?` : ` want to ${txt}?`}
+        {txt[0] === 'h' ? ` really want to ${txt}?` : ` want to ${txt}?`}
         <br />
         This action cannot be undone.
       </p>
